@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int arr[100], n, size;
 
     printf("Enter size of array...");
