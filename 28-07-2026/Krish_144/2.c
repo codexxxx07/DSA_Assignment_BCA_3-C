@@ -10,7 +10,7 @@ int main()
     scanf("%d", &size);
 
     printf("Enter elements:\n");
-    for(int i = 0; i<size; i++)
+    for(int i=0; i<size; i++)
     {
         scanf("%d", &arr[i]);
     }
