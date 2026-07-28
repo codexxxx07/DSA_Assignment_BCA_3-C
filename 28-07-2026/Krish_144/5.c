@@ -26,6 +26,7 @@ int main()
             break;
         }
     }
+    
     if(flag==0)
     {
         printf("Element not found !!!");
