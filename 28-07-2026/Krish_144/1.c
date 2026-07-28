@@ -10,20 +10,23 @@ int main()
     scanf("%d", &size);
 
     printf("Enter elements...\n");
-    for(int i = 0; i<size; i++) {
+    for(int i = 0; i<size; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
     printf("Enter position to delete...");
     scanf("%d", &n);
 
-    for(int i=n-1; i<size-1; i++) {
+    for(int i=n-1; i<size-1; i++)
+    {
         arr[i]=arr[i+1];
     }
     size--; 
 
     printf("Array after deletion...\n");
-    for(int i=0; i<size; i++) {
+    for(int i=0; i<size; i++)
+    {
         printf("%d ", arr[i]);
     }
     return 0;

@@ -10,7 +10,8 @@ int main()
     scanf("%d", &size);
 
     printf("Enter elements:\n");
-    for(int i = 0; i<size; i++) {
+    for(int i = 0; i<size; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
@@ -20,14 +21,16 @@ int main()
     printf("Enter value to insert...");
     scanf("%d", &val);
 
-    for(int i = size; i>=pos; i--) {
+    for(int i = size; i>=pos; i--)
+    {
         arr[i]=arr[i-1];
     }
     arr[pos-1]=val;
     size++;
 
     printf("Array after insertion...\n");
-    for(int i = 0; i<size; i++) {
+    for(int i = 0; i<size; i++)
+    {
         printf("%d ", arr[i]);
     }
     return 0;
