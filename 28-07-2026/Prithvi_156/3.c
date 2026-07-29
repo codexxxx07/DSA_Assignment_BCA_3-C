@@ -2,26 +2,27 @@
 
 int main()
 {
-    int arr[100], n, temp;
+    int arr[50];
+    int n, temp,i;
 
-    printf("Enter the size of array...");
+    printf("size = ");
     scanf("%d", &n);
 
-    printf("Enter the elements...\n");
-    for(int i=0; i<n; i++)
+    printf("elements = ");
+    for(i=0;i<n;i++)
     {
         scanf("%d", &arr[i]);
     }
 
-    for(int i=0; i<n/2; i++)
+    for(i=0; i<n/2; i++)
     {
         temp = arr[i];
         arr[i] = arr[n-i-1];
         arr[n-i-1] = temp;
     }
 
-    printf("Array after reversing...\n");
-    for(int i=0; i<n; i++)
+    printf("result = ");
+    for(i=0;i<n;i++)
     {
         printf("%d ", arr[i]);
     }
